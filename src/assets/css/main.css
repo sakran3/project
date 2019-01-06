@@ -1,245 +1,7 @@
-.App {
-  text-align: center;
-}
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-}
-thead {
-  width: 70%;
-}
-table {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  padding: 0;
-  table-layout: fixed;
-}
-
-table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
-}
-
-table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
-
-table th,
-table td {
-  padding: .625em;
-  text-align: center;
-}
-
-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-    margin-bottom: 25px;
-  }
-
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
-}
-h1 {
-  text-align: center;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: white;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: #f5f5f5;
-}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Overwrite default styles of hr */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for the submit button */
-.registerbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity: 1;
-}
-
-/* Add a blue text color to links */
-a {
-  color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 /*
 	Hielo by TEMPLATED
 	templated.co @templatedco
@@ -1793,6 +1555,10 @@ a {
 		width: device-width;
 	}
 
+	body {
+		-ms-overflow-style: scrollbar;
+	}
+
 	@media screen and (max-width: 480px) {
 
 		html, body {
@@ -3333,6 +3099,7 @@ a {
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
+			background-image: url(../../images/bg.jpg);
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -3626,6 +3393,7 @@ a {
 		}
 
 		@media screen and (max-width: 736px) {
+
 			.wrapper {
 				padding: 3rem 0 1rem 0 ;
 			}
@@ -3636,7 +3404,7 @@ a {
 
 	.grid-style {
 		width: 100%;
-		margin: 0 0 0.5rem 0;
+		margin: 0 0 2.5rem 0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4179,6 +3947,7 @@ a {
 			right: 0;
 			text-align: right;
 			top: 0;
+			vertical-align: middle;
 			width: 7rem;
 		}
 
@@ -4540,4 +4309,4 @@ a {
 				padding: 3rem 0 1rem 0 ;
 			}
 
-    }
+		}
